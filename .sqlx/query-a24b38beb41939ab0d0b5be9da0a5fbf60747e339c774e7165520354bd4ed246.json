@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            SELECT id, user_id, phone_number, notification_content \n            FROM phone_tasks \n            WHERE notification_status = 1 \n            AND datetime(updated_at, '+5 minutes') < datetime('now','localtime')\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "user_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "phone_number",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "notification_content",
+        "ordinal": 3,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "a24b38beb41939ab0d0b5be9da0a5fbf60747e339c774e7165520354bd4ed246"
+}

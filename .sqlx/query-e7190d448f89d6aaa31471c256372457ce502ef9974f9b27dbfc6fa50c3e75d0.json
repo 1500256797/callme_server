@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "\n        SELECT id, user_id, phone_number, notification_content\n        FROM phone_tasks\n        WHERE notification_status = 0\n        ORDER BY created_at ASC\n        LIMIT 1\n        ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "user_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "phone_number",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "notification_content",
+        "ordinal": 3,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "e7190d448f89d6aaa31471c256372457ce502ef9974f9b27dbfc6fa50c3e75d0"
+}

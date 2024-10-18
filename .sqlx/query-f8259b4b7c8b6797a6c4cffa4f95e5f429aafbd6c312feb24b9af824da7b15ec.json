@@ -1,0 +1,56 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT * FROM phone_tasks WHERE user_id = ? AND phone_number = ? AND notification_content = ? AND notification_status = 0 AND created_at > datetime('now', '-10 minute')",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Integer"
+      },
+      {
+        "name": "user_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "phone_number",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "notification_content",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "notification_status",
+        "ordinal": 4,
+        "type_info": "Integer"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 5,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_at",
+        "ordinal": 6,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "f8259b4b7c8b6797a6c4cffa4f95e5f429aafbd6c312feb24b9af824da7b15ec"
+}

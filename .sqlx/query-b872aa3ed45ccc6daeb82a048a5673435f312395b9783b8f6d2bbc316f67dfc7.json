@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO phone_tasks (user_id, phone_number, notification_content,notification_status) VALUES (?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "b872aa3ed45ccc6daeb82a048a5673435f312395b9783b8f6d2bbc316f67dfc7"
+}

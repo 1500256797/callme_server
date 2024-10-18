@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            UPDATE phone_tasks\n            SET notification_status = 1\n            WHERE id = ?\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "08d6da291f5734cb0256910ca8bdc768d28f670e1fa428746cf8e27e59ea0106"
+}
